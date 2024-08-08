@@ -83,7 +83,7 @@ from.addEventListener('submit',(e)=>{
 
 // }
 document.getElementById('downloadResume').addEventListener('click', function() {
-    var fileUrl = "./aman_masai_resume.pdf";
+    var fileUrl = "./sumit_choudhary_resume.pdf";
 
     fetch(fileUrl)
         .then(response => response.blob())
@@ -91,7 +91,7 @@ document.getElementById('downloadResume').addEventListener('click', function() {
             var blobUrl = window.URL.createObjectURL(blob);
             var a = document.createElement('a');
             a.href = blobUrl;
-            a.download = 'aman_yadav_resume.pdf';
+            a.download = 'sumit_choudhary_resume.pdf';
             window.open(fileUrl, '_blank');
             document.body.appendChild(a);
             a.click();
